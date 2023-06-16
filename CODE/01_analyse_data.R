@@ -54,5 +54,10 @@ bayes_6 = lapply(data_6, analyse.bayes, path_model)
 bayes_7 = lapply(data_7, analyse.bayes, path_model)
 bayes_8 = lapply(data_8, analyse.bayes, path_model)
 
+# Save
+save(glm_1, glm_2, glm_3, glm_4, glm_5, glm_6, glm_7, glm_8, 
+     bayes_1, bayes_2, bayes_3, bayes_4, bayes_5, bayes_6, bayes_7, bayes_8,
+     file = 'RESULTS/model_results.RData')
+
 # Message
 message('All analysis done. Stored summarised results.')
